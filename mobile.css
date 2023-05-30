@@ -1,0 +1,277 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --black: #222222;
+  --yellow: rgb(255, 255, 1);
+  --white: #ffffff;
+}
+@media (max-width: 1230px) {
+  .text {
+    width: 120%;
+  }
+}
+/** MOBILE **/
+@media (max-width: 992px) {
+  .nav {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    background-color: var(--yellow);
+    color: var(--black);
+    height: 300px;
+    padding-bottom: 30px;
+    transition: 0.5s;
+  }
+  .menu__mobile {
+    position: sticky;
+    top: 2%;
+  }
+  .nav a {
+    color: var(--black);
+  }
+  .visible {
+    left: 100%;
+    transition: 0.5s;
+  }
+  .nav ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+  }
+  .nav li {
+    display: flex;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .menu__mobile {
+    display: block;
+    border: none;
+    border-radius: 10%;
+    background: #20232a;
+    padding: 2px 5px;
+    margin-left: 85%;
+  }
+  .menu__mobile i {
+    font-size: 30px;
+  }
+  .menu__mobile i {
+    color: var(--yellow);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .menu__mobile i:hover {
+    rotate: 180deg;
+    transition: 0.5s;
+  }
+  #header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 0;
+    height: 780px;
+    width: 100%;
+  }
+  .first__header__container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .first__header__container h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+  .text {
+    width: 400px;
+    padding: 0;
+    font-size: 20px;
+    justify-content: center;
+  }
+  .btn__contacto {
+    position: absolute;
+    top: 243%;
+    width: 50%;
+    left: 25%;
+  }
+  .second__header__container img {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  #section1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: -5px;
+  }
+  #section1 h2 {
+    width: 100%;
+    text-align: center;
+    margin-left: 10%;
+  }
+  .experience__text,
+  .experience__info {
+    display: flex;
+    width: 95%;
+    margin-left: 30px;
+  }
+  .experience__text p {
+    width: 100%;
+    text-align: center;
+  }
+  .experience__info h3 {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .experience__data {
+    display: flex;
+    width: 80%;
+  }
+  .date {
+    width: 100%;
+  }
+  hr {
+    width: 85%;
+  }
+  .position__company {
+    width: 100%;
+  }
+  .section2__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills {
+    margin-bottom: 40px;
+  }
+  .skills__text {
+    font-weight: 600;
+    opacity: 80%;
+  }
+  #section3 {
+    width: 100%;
+  }
+  #section3 h2 {
+    margin-bottom: 30px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
+  #section4 {
+    width: 100%;
+  }
+  #section4 h2 {
+    text-align: center;
+    margin: 0;
+  }
+  .icon__shape__contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .icons__contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .text__contact {
+    color: var(--grey);
+    opacity: 80%;
+    line-height: 22px;
+  }
+  .logo__contact {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .logo__contact img {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .menu__mobile {
+    position: sticky;
+    top: 2%;
+  }
+  .first__header__container h1 {
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    margin-left: 5%;
+  }
+  .btn__contacto {
+    top: 247%;
+    left: 30%;
+  }
+  #section1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .experience__data {
+    width: 100%;
+  }
+  .experience__text h2 {
+    width: 100%;
+    text-align: center;
+    margin-left: 0% !important;
+  }
+  .experience__text {
+    width: 90%;
+    font-size: 12px;
+    text-align: center;
+  }
+  .experience__text p {
+    width: 100%;
+  }
+  .experience__info {
+    width: 90%;
+  }
+  .position__company {
+    margin-right: 50%;
+  }
+  #section4 h2 {
+    text-align: center;
+  }
+  .icons__contact {
+    width: 90%;
+    margin: 30px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon__shape__contact {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo__contact {
+    margin: 0;
+  }
+  .text__contact {
+    margin: 10px 0;
+    line-height: 30px;
+  }
+}
