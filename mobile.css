@@ -247,7 +247,8 @@ body {
     text-align: center;
   }
   .experience__text p {
-    width: 100%;
+    width: 90%;
+    padding-left: 7%;
   }
   .experience__info {
     width: 90%;
