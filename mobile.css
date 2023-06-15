@@ -15,7 +15,10 @@ body {
 }
 @media (max-width: 1230px) {
   .text {
-    width: 120%;
+    width: 100%;
+  }
+  #section1 {
+    width: 100vw;
   }
 }
 /** MOBILE **/
@@ -125,12 +128,11 @@ body {
   #section1 h2 {
     width: 100%;
     text-align: center;
-    margin-left: 10%;
   }
   .experience__text,
   .experience__info {
     display: flex;
-    width: 95%;
+    width: 80%;
     margin-left: 30px;
   }
   .experience__text p {
@@ -212,7 +214,7 @@ body {
 @media (max-width: 450px) {
   .menu__mobile {
     position: sticky;
-    top: 2%;
+    top: 1%;
   }
   .first__header__container h1 {
     font-size: 35px;
@@ -222,11 +224,14 @@ body {
   }
   .btn__contacto {
     top: 247%;
-    left: 30%;
+    left: 27%;
   }
   #section1 {
     width: 100%;
     margin: 0 auto;
+  }
+  .section2 {
+    width: 100%;
   }
   .experience__data {
     width: 100%;
