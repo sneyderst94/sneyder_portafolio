@@ -20,6 +20,17 @@ body {
   #section1 {
     width: 100vw;
   }
+  .second__header__container {
+    float: right;
+  }
+  .second__header__container img {
+    position: absolute;
+    right: 0;
+    bottom: -244px;
+  }
+  .section2__container {
+    flex-wrap: wrap;
+  }
 }
 /** MOBILE **/
 @media (max-width: 992px) {
@@ -115,9 +126,15 @@ body {
     width: 50%;
     left: 25%;
   }
+  .second__header__container {
+    float: right;
+  }
   .second__header__container img {
     max-width: 300px;
-    margin-top: 20px;
+    position: absolute;
+    right: 33%;
+    bottom: -160px;
+    z-index: -1;
   }
   #section1 {
     display: flex;
@@ -160,6 +177,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
   }
   .skills {
     margin-bottom: 40px;
@@ -221,6 +239,10 @@ body {
     width: 100%;
     text-align: center;
     margin-left: 5%;
+  }
+  .second__header__container img {
+    right: 15%;
+    bottom: -153px;
   }
   .btn__contacto {
     top: 247%;
